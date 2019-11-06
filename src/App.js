@@ -1,15 +1,13 @@
 import React from "react";
 import "./App.css";
+import BodyApp from "./components/body";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <BodyApp />
     </div>
   );
 }
 
-export default App;
+export default App
