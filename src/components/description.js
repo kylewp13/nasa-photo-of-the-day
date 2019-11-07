@@ -1,11 +1,10 @@
 import React from "react";
+import { CardText } from 'reactstrap';
 
 const NasaDesc = props => {
-  // console.log(props)
+  console.log(props)
   return (
-    <div>
-      <p>{props.nasa.explanation}</p>
-    </div>
+    <CardText>{props.nasa.explanation}</CardText>
   )
 }
 
