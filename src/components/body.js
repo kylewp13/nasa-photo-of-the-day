@@ -3,6 +3,7 @@ import axios from "axios";
 import NasaTitle from "./title";
 import NasaImg from "./img";
 import NasaDesc from "./description";
+import { Card, CardBody, Col } from 'reactstrap';
 
 export default function BodyApp() {
   const [nasa, setNasa] = useState([])
@@ -17,12 +18,16 @@ export default function BodyApp() {
       console.log(error);
     })
   }, [])
-  
+
   return (
-    <div>
-      <NasaTitle nasa={nasa}/>
-      <NasaImg nasa={nasa}/>
-      <NasaDesc nasa={nasa}/>
-    </div>
+    <Col lg={{ size: 6, offset: 3 }}>
+      <Card>
+        <NasaTitle nasa={nasa}/>
+        <NasaImg nasa={nasa}/>
+        <CardBody>
+          <NasaDesc nasa={nasa}/>
+        </CardBody>
+      </Card>
+    </Col>
     )
   };
