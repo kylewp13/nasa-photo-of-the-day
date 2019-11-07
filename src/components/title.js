@@ -1,12 +1,13 @@
 import React from "react";
+import { CardTitle, CardSubtitle, CardBody } from 'reactstrap';
 
 const NasaTitle = props => {
   // console.log(props)
   return (
-    <div>
-      <h1>{props.nasa.title}</h1>
-      <h3>{props.nasa.date}</h3>
-    </div>
+    <CardBody>
+      <CardTitle>{props.nasa.title}</CardTitle>
+      <CardSubtitle>Date: {props.nasa.date}</CardSubtitle>
+    </CardBody>
   )
 }
 
