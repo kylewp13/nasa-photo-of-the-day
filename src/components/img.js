@@ -1,11 +1,10 @@
 import React from "react";
+import { CardImg } from 'reactstrap';
 
 const NasaImg = props => {
   // console.log(props)
   return (
-    <div>
-      <img src={props.nasa.hdurl} className="NASA-image" alt="random space"/>
-    </div>
+    <CardImg src={props.nasa.hdurl} className="NASA-image" alt="random space"/>
   )
 }
 
