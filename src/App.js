@@ -1,15 +1,20 @@
 import React from "react";
 import "./App.css";
+import BodyApp from "./components/body";
+import { Container, Row } from 'reactstrap';
+import NasaNav from "./components/nav"
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <NasaNav />
+      <Container>
+        <Row>
+          <BodyApp />
+        </Row>
+      </Container>
     </div>
-  );
-}
-
-export default App;
+    );
+  }
+  
+  export default App
